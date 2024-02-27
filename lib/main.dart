@@ -22,13 +22,27 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.cyan,
-      appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 165, 149, 46),
+      //appBar: AppBar(),
+      body: Center(
+        child: const SafeArea(
+          child:Text(
+          'Taskaroo',
+          style: TextStyle(
+            color:Colors.white,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          )
+        )
+         
+        ),
       ),
+      
     ) ;
   }
 }
